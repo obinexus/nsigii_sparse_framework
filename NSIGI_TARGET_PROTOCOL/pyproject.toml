@@ -1,0 +1,78 @@
+# pyproject.toml - NSIGII RIFT V1 Python Binding
+# OBINexus Computing Framework
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel", "cffi>=1.15.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsigii-rift"
+version = "1.0.0-jan2026"
+description = "NSIGII RIFT V1 - Zero Trust Service Architecture with Color Verification"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "OBINexus Proprietary"}
+authors = [
+    {name = "Nnamdi Michael Okpala", email = "nnamdi@obinexus.com"}
+]
+keywords = [
+    "compiler",
+    "tokenizer",
+    "zero-trust",
+    "phantom-id",
+    "rift",
+    "obinexus",
+    "nsigii"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Compilers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "cffi>=1.15.0",
+    "cryptography>=41.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+    "sphinx>=6.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/obinexus/nsigii-rift"
+Documentation = "https://nsigii-rift.readthedocs.io"
+Repository = "https://github.com/obinexus/nsigii-rift"
+Issues = "https://github.com/obinexus/nsigii-rift/issues"
+
+[tool.setuptools]
+packages = ["nsigii", "nsigii.rift", "nsigii.phantom", "nsigii.cisco"]
+
+[tool.setuptools.package-data]
+nsigii = ["*.so", "*.dll", "*.dylib", "*.rift", "*.mrf"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
