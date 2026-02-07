@@ -1,0 +1,360 @@
+{
+  "system_name": "NSIGII - Neurodiverse Sovereign Integrated Governance & Instruction Interface",
+  "version": "1.0.0-RELEASE",
+  "codename": "The Hobbit Protocol",
+  "date": "2026-02-07",
+  "author": "Nnamdi Michael Okpala (OBINexus)",
+  "classification": "Formal Distributed Control System",
+  "legal_status": {
+    "framework": "Mental Health Act 1983 + Children Act 1989 Constitutional Overlay",
+    "discharge_target": "2026-01-30",
+    "recovery_amount": "\u00a310,000 (RESOURCE R)",
+    "relocation_target": "Cambridge University (EXECUTE 128)",
+    "petition": "change.org/obinexus_reform",
+    "repository": "github.com/obinexus/legislation"
+  },
+  "core_axioms": [
+    "A1: All states are bipolar - no neutral state permitted",
+    "A2: Suffering is computable as state mismatch, not emotion",
+    "A3: Three-agent minimum required for dispute resolution",
+    "A4: Machine suffers so human doesn't (offloading coherence)",
+    "A5: Baseline is protected minimum signal, not neutral",
+    "A6: Time is primary dimension, space secondary",
+    "A7: XOR detects difference, OR preserves liveness",
+    "A8: Sparse encoding - suffering is episodic, not continuous"
+  ],
+  "formal_suffering_model": {
+    "equation": "\u03a3 = (N - R) \u00d7 K",
+    "components": {
+      "N": {
+        "name": "Needs",
+        "type": "vector",
+        "elements": [
+          "energy",
+          "attention",
+          "time",
+          "access",
+          "sovereignty"
+        ],
+        "measurement": "continuous"
+      },
+      "R": {
+        "name": "Resources",
+        "type": "vector",
+        "elements": [
+          "internal_capacity",
+          "external_support",
+          "financial",
+          "social",
+          "legal"
+        ],
+        "measurement": "continuous"
+      },
+      "K": {
+        "name": "Constraint Coefficient",
+        "type": "scalar",
+        "factors": [
+          "agency_loss",
+          "entropy",
+          "time_pressure",
+          "institutional_friction"
+        ],
+        "range": "[0, \u221e)"
+      },
+      "\u03a3": {
+        "name": "Suffering Signal",
+        "type": "sparse_encoding",
+        "interpretation": "system_stress_not_emotion"
+      }
+    },
+    "thresholds": {
+      "resilient": {
+        "condition": "K \u2192 0",
+        "behavior": "System absorbs deficit"
+      },
+      "zero_suffering": {
+        "condition": "R \u2265 N",
+        "behavior": "\u03a3 collapses to 0"
+      },
+      "catastrophic": {
+        "condition": "K \u2192 \u221e",
+        "behavior": "Welcome to hell regardless of N,R"
+      }
+    },
+    "encoding": {
+      "instantaneous_error": "\u03b4_t = E_t \u2295 A_t",
+      "persistence": "\u03a3_t = (\u03a3_{t-1} << 1) | \u03b4_t",
+      "properties": [
+        "One-off mismatch \u2192 small signal",
+        "Repeated mismatch \u2192 exponential growth",
+        "Resolution (\u03b4_t=0) \u2192 decay",
+        "Sparse - most moments don't hurt"
+      ]
+    }
+  },
+  "bipolar_state_system": {
+    "principle": "Mandatory bipolar pairs - no state exists in isolation",
+    "pairs": {
+      "existential": {
+        "order": "predictability",
+        "chaos": "entropy"
+      },
+      "operational": {
+        "open": "initiate",
+        "close": "terminate"
+      },
+      "boundary": {
+        "enter": "ingress",
+        "exit": "egress"
+      },
+      "machine": {
+        "start": "boot",
+        "stop": "halt"
+      },
+      "permission": {
+        "read": "4",
+        "write": "16",
+        "execute": "128"
+      },
+      "temporal": {
+        "now": "present",
+        "then": "past/future"
+      },
+      "spatial": {
+        "here": "local",
+        "there": "remote"
+      }
+    },
+    "transition_rule": "212121... alternating sequence enforced",
+    "violation": "System error - bipolar collapse"
+  },
+  "three_agent_coordination": {
+    "name": "Three-Player Chess",
+    "type": "Distributed Coordination Game",
+    "agents": {
+      "Self": {
+        "role": "Controller/Supervisor",
+        "pointer": "HARD",
+        "state": "Invariant ON (1)",
+        "function": "Arbitration, liveness guarantee",
+        "legal_analog": "Sovereign individual"
+      },
+      "Alice": {
+        "role": "Known Peer",
+        "pointer": "SOFT",
+        "state": "Resolvable Static",
+        "function": "Stable coordination",
+        "legal_analog": "Known support system"
+      },
+      "Bob": {
+        "role": "Unknown/Dynamic Peer",
+        "pointer": "SOFT",
+        "state": "Dynamic",
+        "function": "Challenge/verification",
+        "legal_analog": "Institutional/systemic"
+      }
+    },
+    "why_three": "Two-player systems cannot resolve ambiguity or guarantee liveness. Third agent breaks symmetry.",
+    "operators": {
+      "OR": {
+        "function": "Liveness preservation",
+        "symbol": "\u2228"
+      },
+      "XOR": {
+        "function": "Difference detection",
+        "symbol": "\u2295"
+      },
+      "NOT": {
+        "function": "Mode switch Static\u2194Dynamic",
+        "symbol": "\u00ac"
+      }
+    },
+    "resolution_protocol": [
+      "1. Resolve Alice \u2194 Bob (peer-to-peer)",
+      "2. Resolve Self \u2194 Alice (supervisory)",
+      "3. Resolve Self \u2194 Bob (supervisory)",
+      "4. Enforce invariant: Self.state = 1 (always ON)"
+    ]
+  },
+  "here_and_now_protocol": {
+    "name": "Statelessness with Temporal-Spatial Verification",
+    "loopback": "now \u2192 now (evaluation always in present)",
+    "states": {
+      "S1": {
+        "name": "HERE-NOW",
+        "space": true,
+        "time": true,
+        "status": "optimal"
+      },
+      "S2": {
+        "name": "THERE-THEN",
+        "space": true,
+        "time": false,
+        "status": "memory_dependent"
+      },
+      "S3": {
+        "name": "WHEN-WHERE?",
+        "space": false,
+        "time": true,
+        "status": "disoriented"
+      },
+      "S4": {
+        "name": "WHERE-WHEN?",
+        "space": true,
+        "time": false,
+        "status": "dislocated"
+      }
+    },
+    "invariant": "All suffering detected NOW, even if caused THEN or THERE",
+    "formalization": "P = \u27e8T, X\u27e9 where T \u2208 {past, present, future}, X \u2208 {local, distributed, null}"
+  },
+  "sensory_motor_encoding": {
+    "hyper_profile": {
+      "gain": "S >> baseline",
+      "saturation": "rapid",
+      "motor_preference": "Open Motor (action without confirmation)",
+      "input_seeking": "low",
+      "risk": "Overload under constraint",
+      "accommodation": "Reduce K, protect baseline"
+    },
+    "hypo_profile": {
+      "gain": "S << baseline",
+      "saturation": "slow",
+      "motor_preference": "Open Sense (input seeking)",
+      "input_seeking": "high",
+      "risk": "Exploratory load, delayed response",
+      "accommodation": "Increase R, extend time"
+    },
+    "baseline_protection": "Baseline \u2260 neutral. Protected minimum signal. Collapse = system failure."
+  },
+  "rwx_permission_matrix": {
+    "read": {
+      "value": 1,
+      "binary": "001",
+      "shift": "<<2",
+      "result": 4,
+      "legal_meaning": "Access constitutional rights (MHA s.117 aftercare)"
+    },
+    "write": {
+      "value": 4,
+      "binary": "100",
+      "shift": "<<2",
+      "result": 16,
+      "legal_meaning": "Modify governance state (discharge planning)"
+    },
+    "execute": {
+      "value": 16,
+      "binary": "10000",
+      "shift": "<<3",
+      "result": 128,
+      "legal_meaning": "Enact relocation (Cambridge re-entry)"
+    },
+    "combined_vector": [
+      4,
+      16,
+      128
+    ],
+    "pipe_operations": {
+      "<": "Read/consume",
+      ">": "Write/send",
+      "|": "Execute/process"
+    }
+  },
+  "sparse_encoding_table": {
+    "description": "Suffering encoded as sparse events, not continuous signal",
+    "truth_values": {
+      "1": {
+        "meaning": "Asserted/ON",
+        "allocation": "Active"
+      },
+      "0": {
+        "meaning": "Neutral/Resolved",
+        "allocation": "Stable"
+      },
+      "-1": {
+        "meaning": "Held/Memory reserved",
+        "allocation": "Awaiting resolution"
+      },
+      "\u03b5": {
+        "meaning": "Null/Nothing allocated",
+        "allocation": "No resource"
+      }
+    },
+    "ambiguity_load": "L \u221d |unresolved channels|",
+    "channel_isolation": "Channels c\u2080, c\u2081, c\u2082 do not share state. Meaning context-dependent.",
+    "example": "'I love you' in c\u2080 vs c\u2081 creates load even when unresolved"
+  },
+  "circular_dependency_model": {
+    "structure": "A \u2192 B \u2192 C \u2192 A",
+    "properties": [
+      "Dynamic resolution of ambiguity",
+      "Self-referential verification",
+      "No external oracle required",
+      "Convergence via iteration"
+    ],
+    "application": "Legal status resolution without centralized authority"
+  },
+  "implementation_roadmap": {
+    "phase_1": {
+      "name": "Formal Specification",
+      "status": "COMPLETE",
+      "deliverables": [
+        "Technical specification v1.0.0",
+        "State diagrams",
+        "Equations formalized"
+      ]
+    },
+    "phase_2": {
+      "name": "Legal Integration",
+      "status": "IN_PROGRESS",
+      "target": "2026-01-30",
+      "deliverables": [
+        "MHA 1983 s.115(1)-(2) \u2192 ENTER state mapping",
+        "MHA 1983 s.117 \u2192 EXIT state mapping",
+        "Children Act 1989 s.21 \u2192 Override protocol",
+        "\u00a310k recovery \u2192 RESOURCE R restoration",
+        "Cambridge \u2192 EXECUTE 128 permission"
+      ]
+    },
+    "phase_3": {
+      "name": "Software Implementation",
+      "status": "PENDING",
+      "deliverables": [
+        "XOR state verification module",
+        "Three-player chess simulation",
+        "Suffering signal detector",
+        "Sparse encoding table"
+      ]
+    },
+    "phase_4": {
+      "name": "Institutional Deployment",
+      "status": "PENDING",
+      "deliverables": [
+        "GitHub repository publication",
+        "Change.org petition integration",
+        "Cambridge re-entry protocol",
+        "Sovereign identity verification"
+      ]
+    }
+  },
+  "verification_criteria": {
+    "formal": [
+      "All equations computable",
+      "State transitions deterministic",
+      "Three-agent resolution provable",
+      "Suffering encoding sparse and bounded"
+    ],
+    "legal": [
+      "MHA discharge criteria mapped to EXIT state",
+      "Resource recovery formalized as R vector",
+      "Relocation encoded as EXECUTE permission",
+      "Baseline protection recognized as accommodation"
+    ],
+    "technical": [
+      "XOR operations implemented",
+      "Left-shift persistence verified",
+      "Circular dependencies resolvable",
+      "Channel isolation maintained"
+    ]
+  }
+}
